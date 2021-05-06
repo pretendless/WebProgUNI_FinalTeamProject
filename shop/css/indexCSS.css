@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+
+html {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Langar', cursive;
+    overflow: auto;
+}
+
+html, body {
+    width: 100%;
+    
+    background-image: url("../images/background.png");
+    background-size: contain; 
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+header {
+    width: 100%;
+    height: 50%;
+}
+
+header .fixed_head {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 1.7em;
+    z-index: 100;
+    font-size: 1.5em;
+    color: white;
+    padding-top: 0.7em;
+    background-color: black;
+    display: table;
+    opacity: 0.6;
+    margin: 0 auto;
+}
+
+header .fixed_head .logo {
+    width: 20%;
+    margin-left: 0;
+    text-align: center;
+    display: table-cell;
+}
+
+header .fixed_head .menu {
+    width: 80%;
+    list-style: none;
+    display: table-cell;
+}
+
+header .fixed_head .menu ul li {
+    display: inline;
+    margin-right: 1.5em;
+}
+
+header .fixed_head li:hover {
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: #acb7c3;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+/* ================================== MAIN ==================================== */
+
+main {
+    margin: 60px 0px 30px;
+}
+
+.mainimg {
+    position: relative;
+    text-align: center;
+}
+
+.unborderedblock {
+    position: relative;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container .home{
+  align-items: flex-end;
+}
+
+.flex-container .outside{
+  align-items: flex-start;
+}
+
+.popup {
+	position: fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position: fixed;;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+.popup_img {
+	position: relative;
+	margin:0 auto;
+	z-index:2;
+	max-height:94%;
+    max-width:94%;
+    min-height: 50%;
+	margin:1% 0 0 0;
+}
+
+.reviews dt {
+    font-size: 15px;
+    margin: 2px 30px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.reviews dd {
+    font-size: 15px;
+    text-align: start;
+    margin: 2px 40px;
+}
+
+.propositions {
+    text-align: start;
+    color: maroon;
+    font-size: 20px;
+}
+
+.block {
+    position: relative;
+    text-align: center;
+    padding: 10px 20px 20px;
+    margin: 10px 15%;
+    border-radius: 2px;
+    background-color: #f9f7ff;
+    background-position: center;
+    border: 0.2em solid #000000;
+}
+
+/* ================================== POPUP ===================================== */
+.divPop
+{
+    text-align: center;
+    font-size: large;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(158, 124, 14);
+    z-index: 9999;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn {
+    text-align: end;
+}
+
+/* ================================== FOOTER ==================================== */
+
+
+footer {
+    width: 100%;
+    height: 3%;
+    background-color: black;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.6;
+    text-align: center;
+}
+
+footer .rights {
+    height: 100%;
+    color: white;
+    margin: 0 auto;
+    display: table;
+}
+
+footer .rights span {
+    margin-top: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1em;
+}

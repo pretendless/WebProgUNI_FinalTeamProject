@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+
+html {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Langar', cursive;
+    overflow: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background.png");
+    background-size: contain; 
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+header .fixed_head {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 1.7em;
+    z-index: 100;
+    font-size: 1.5em;
+    color: white;
+    padding-top: 0.7em;
+    background-color: black;
+    display: table;
+    opacity: 0.6;
+    margin: 0 auto;
+}
+
+
+header .fixed_head .menu {
+    width: 80%;
+    list-style: none;
+    display: table-cell;
+}
+
+header .fixed_head .menu ul li {
+    display: inline;
+    margin-right: 1.5em;
+}
+
+header .fixed_head li:hover {
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: #acb7c3;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+/* ================================== MAIN ==================================== */
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;    
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+main h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main div {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 10px 15%;
+    background-color: #f9f7ff;
+    background-position: center;
+    border-color: #a0a0a0;
+    border: 0.2em solid #000000;
+}
+
+main form {
+    margin-bottom: 10px;
+}
+
+main div div {   
+    border: 0.0em;
+}
+
+main img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    opacity: 0.90; 
+}
+
+main div table {
+    margin-bottom: 10px;
+}
+
+
+/* ================================== POPUP ===================================== */
+.divPop
+{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #bd9e9e;
+    z-index: 9999;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/* ================================== FOOTER ==================================== */
+
+
+footer {
+    width: 100%;
+    height: 3%;
+    background-color: black;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.6;
+    text-align: center;
+}
+
+footer .rights {
+    height: 100%;
+    color: white;
+    margin: 0 auto;
+    display: table;
+}
+
+footer .rights span {
+    margin-top: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1em;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Contacts"/>
+    <meta name="description" content="Contacts">
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Контакты кирпича</title>
+</head>
+<body>
+
+<header>
+    <div class="fixed_head">
+        <nav class="menu">
+            <ul>
+                <li class="logo"><a href="index.html">Shop</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="contacts"><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class = "address">
+        <h1>Офис</h1>
+        <p>Наш офис находиться по адресу Вяземский переулок 5-7. </p>
+        <p><b>Метро</b> Петроградская / Чкаловская</p>
+        
+        <div class = "map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5ef4a350ebacdf7ccae15374e3b42f6865961ad21f33e710f051a61e60242de6&amp;width=600&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </div>
+    <div class = "phone">
+        <h1>Телефон</h1>
+        <p>Если вы захотите нам позвонить что бы задать вопросы, то вот наш телефон: +7(123)-123-4567</p>
+    </div>
+
+    <div class = "feedback">
+        <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+            <h1 class="title">Оставьте заявку для обратного звонка</h1>
+            <p class="contact-form__description"></p>
+            <div class="contact-form__input-wrapper">
+                <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите ваше имя">
+            </div>
+                     
+            <div class="contact-form__input-wrapper">
+                <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите ваш телефон">
+            </div>
+
+            <button class="contact-form__button" type="submit"> Запросить звонок </button>
+        </form>
+    </div>
+
+    <div class = "address_form">
+
+        <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+            <h1 class="title">Оставьте заявку на доставку кирпичей</h1>
+            <div class="contact-form__input-wrapper">
+                <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите ваше имя">
+            </div>
+                     
+            <div class="contact-form__input-wrapper">
+                <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите ваш телефон">
+            </div>
+
+            <div class="contact-form__input-wrapper">
+                <input name="tel" type="text" class="contact-form__input contact-form__input_tel" placeholder="Введите ваш адрес">
+            </div>
+
+            <button class="contact-form__button" type="submit"> Запросить доставку </button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <span class="rights">
+        COPYRIGHT ©
+        <time datetime="16.01.2021">2021</time>
+        Mikhniuk Roman, Zlobinets Nikita. 
+    </span>
+</footer>
+
+</body>
+</html>
